@@ -1,0 +1,30 @@
+.search {
+  display: none;
+  height: 78px;
+  right: 0;
+  top: 40px;
+  background-color: $special-grey;
+  padding: 0 444px 0 255px;
+}
+
+.search__wrapper {
+  width: 978px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.search__text {
+  font-size: $fs-title;
+  line-height: 20px;
+  font-weight: 600;
+}
+
+.search__button {
+  background-color: $special-red;
+  color: $basic-white;
+  width: 136px;
+  padding: 8px 40px;
+  font-size: $fs-additional;
+  line-height: $lh-additional;
+}

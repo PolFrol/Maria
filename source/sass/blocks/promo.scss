@@ -1,0 +1,42 @@
+.promo {
+  position: absolute;
+  width: 475px;
+  height: 247px;
+  background-color: $basic-white;
+  z-index: 2;
+  bottom: 57px;
+  left: 535px;
+  padding: 35px 35px 33px 35px;
+}
+
+.promo__text {
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 500;
+  width: 300px;
+  margin: 64px 0 0 0;
+}
+
+.promo__button {
+  position: absolute;
+  width: 58px;
+  height: 58px;
+  background-color: $special-red;
+  border-radius: 50%;
+  border: none;
+  bottom: 40px;
+  right: 35px;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 20px;
+    background-image: url("/img/arrow-white.svg");
+    background-repeat: no-repeat;
+    right: 23px;
+    bottom: 20px;
+    z-index: 1;
+  }
+}

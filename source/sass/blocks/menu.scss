@@ -1,0 +1,83 @@
+.menu__container {
+  position: relative;
+  width: 23px;
+  height: 16px;
+  cursor: pointer;
+  top: 32px;
+  left: -60px;
+  border: none;
+  background-color: transparent;
+}
+
+.menu__container::before {
+  position: absolute;
+  content: "";
+  background-color: $basic-black;
+  box-shadow: 0 6px 0 0 $basic-black, 0 12px 0 0 $basic-black;
+  width: 23px;
+  height: 2px;
+  top: 0;
+  left: 0;
+}
+
+.menu__wrapper {
+  display: none;
+  background-color: $basic-white;
+  height: 540px;
+  width: 1680px;
+  box-shadow: 0 5px 5px rgba(56, 48, 48, 0.3);
+  padding: 38px 196px 91px 196px;
+}
+
+.menu__box {
+  display: flex;
+  padding-top: 38px;
+}
+
+.menu__list {
+  margin-right: 49px;
+}
+
+.menu__container:hover .menu__wrapper {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+.menu__item {
+  font-size: $fs-main;
+  line-height: $lh-additional;
+}
+
+.menu__item--header {
+  padding-bottom: 13px;
+  font-size: $fs-additional;
+  line-height: $lh-additional;
+  font-weight: 600;
+}
+
+.menu__wrapper-header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.menu__wrapper-list {
+  display: flex;
+}
+
+.menu__wrapper-item {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 600;
+  padding-bottom: 23px;
+
+  &:hover {
+    color: $special-red;
+    border-bottom: 3px solid $special-red;
+  }
+}
+
+.menu__wrapper-item:nth-child(2) {
+  margin: 0 76px 0 69px;
+}
